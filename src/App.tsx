@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import logo from "../public/rompit.png";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="w-[99vw] h-screen">
+        {/* <Navbar /> */}
+        <div className="h-screen w-[100%] flex justify-between items-center ">
+          <div className="h-full flex justify-center">
+            <div className="text-xl font-bold h-full mt-20 w-2/3 text-clip  ">
+              <div className="">
+                <img width={150} height={150} src={logo} />
+              </div>
+              <div className="text-5xl  ">
+                Revolutionizing Decentralized Web !
+              </div>
+              <div>
+                <p className="text-lg mt-3">
+                  Empowering Users and Developers in the Web3 Ecosystem
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="pr-9">
+            <div className="mockup-browser bg-base-300 border">
+              <div className="mockup-browser-toolbar">
+                <div className="input">https://www.rompit.org</div>
+              </div>
+              <div className="bg-base-200 flex justify-center px-4 py-16">
+                Hello!
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
