@@ -21,6 +21,11 @@ function App() {
               <button className="btn btn-outline mt-4 ml-2 btn-sm">
                 Explore More
               </button>
+              <div>
+                <p className="text-6xl mt-8 text-orange-700/75">
+                  We are remodeling the webpage in our local server *this is a dummy page*
+                </p>
+              </div>
             </div>
           </div>
           <div className="pr-9 flex justify-center">
