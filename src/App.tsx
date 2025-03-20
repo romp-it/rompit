@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/context/ThemeContext";
 import Index from "./pages/Index";
 import AboutPage from "./pages/AboutPage";
 import BenefitsPage from "./pages/BenefitsPage";
-import ServicesPage from "./pages/ServicesPage";
+import ServicesPage from "@/pages/ServicesPage";
 import TeamPage from "./pages/TeamPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
