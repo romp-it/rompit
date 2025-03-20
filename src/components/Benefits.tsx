@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
-import { Shield, TrendingUp, Rocket, TestTube } from 'lucide-react';
+import { Shield, TrendingUp, Rocket, TestTube, Link } from 'lucide-react';
 
 const Benefits: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -84,8 +84,8 @@ const Benefits: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center animate-on-scroll stagger-delay-5">
-          <a
-            href="/benefits"
+          <Link
+            to="/benefits"
             className="bg-rompit/10 hover:bg-rompit/20 text-rompit px-6 py-3 rounded-md font-medium transition-all duration-200 focus-ring inline-flex items-center"
           >
             <span>Explore Benefits</span>
@@ -97,7 +97,7 @@ const Benefits: React.FC = () => {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

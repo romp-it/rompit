@@ -1,4 +1,6 @@
+
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom'; // Correct import
 
 const About: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -95,8 +97,8 @@ const About: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center animate-on-scroll stagger-delay-4">
-          <a
-            href="/about"
+          <Link
+            to="/about"
             className="inline-flex items-center text-rompit hover:text-rompit-600 font-medium transition-colors duration-200 cursor-pointer"
           >
             <span>Learn More</span>
@@ -108,7 +110,7 @@ const About: React.FC = () => {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

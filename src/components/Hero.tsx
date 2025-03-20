@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import FloatingShapes from './FloatingShapes';
-
+import { Link } from 'react-router-dom'; // Correct import
 const Hero: React.FC = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
@@ -59,12 +59,12 @@ const Hero: React.FC = () => {
           ref={ctaRef} 
           className="animate-on-scroll stagger-delay-2"
         >
-          <a 
-            href="#about" 
+          <Link
+            to="/about" 
             className="bg-rompit text-white px-8 py-4 rounded-md text-lg font-medium transition-all duration-300 hover:bg-rompit-600 hover:shadow-[0_0_15px_rgba(255,102,0,0.5)] focus-ring hover-grow"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       </div>
     </section>

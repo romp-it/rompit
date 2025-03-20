@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
-import { Gamepad2, Link, Database ,Brain} from 'lucide-react';
+import { Gamepad2, Database ,Brain} from 'lucide-react';
+import { Link } from 'react-router-dom'; // Correct import
 
 const Services: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -82,7 +83,7 @@ const Services: React.FC = () => {
       title: 'Blockchain Development',
       description: 'Custom blockchain solutions for gaming and beyond',
       features: ['Tokenized Economy Design and Crypto Integration',
-,'NFT Solutions for gaming, art, and collectibles','Custom Public and Private Blockchain Development',],
+'NFT Solutions for gaming, art, and collectibles','Custom Public and Private Blockchain Development',],
     },
     {
       icon: Brain,
