@@ -2,7 +2,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Gamepad2, Database ,Brain} from 'lucide-react';
 import { Link } from 'react-router-dom'; // Correct import
-
 const Services: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
@@ -70,14 +69,14 @@ const Services: React.FC = () => {
          'Cutting-Edge Technology using Unreal Engine and Unity',
           'Multi-Platform Development for PC, console, and mobile'],
     },
-    {
-      icon: Link,
-      title: 'Web3 Integration',
-      description: 'Empower your gaming platform with blockchain technology',
-      features: ['Decentralized Gaming Ecosystems with true asset ownership',
-                   'Smart Contract Solutions for scalable systems',
-                  'Seamless integration with dApps and gaming platforms'],
-    },
+    // {
+    //   icon: Link,
+    //   title: 'Web3 Integration',
+    //   description: 'Empower your gaming platform with blockchain technology',
+    //   features: ['Decentralized Gaming Ecosystems with true asset ownership',
+    //                'Smart Contract Solutions for scalable systems',
+    //               'Seamless integration with dApps and gaming platforms'],
+    // },
     {
       icon: Database,
       title: 'Blockchain Development',
@@ -137,8 +136,8 @@ const Services: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center animate-on-scroll stagger-delay-4">
-          <a
-            href="/services"
+          <Link
+            to="/services"
             className="bg-rompit text-white px-6 py-3 rounded-md font-medium hover:bg-rompit-600 transition-colors duration-200 focus-ring inline-flex items-center"
           >
             <span>View All Services</span>
@@ -150,7 +149,7 @@ const Services: React.FC = () => {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

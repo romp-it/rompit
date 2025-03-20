@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
-import { Shield, TrendingUp, Rocket, TestTube, Link } from 'lucide-react';
-
+import { Shield, TrendingUp, Rocket, TestTube } from 'lucide-react';
+import { Link } from 'react-router-dom'; // Correct import
 const Benefits: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);

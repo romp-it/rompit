@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { MapPin, Phone, Mail, CheckCircle ,Timer} from 'lucide-react';
 import { title } from 'process';
 import { Content } from 'vaul';
+import { Link } from 'react-router-dom'; // Correct import
 
 const Contact: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
